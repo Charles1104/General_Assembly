@@ -53,10 +53,10 @@ fail = data[data.status_binary == 0]
 arr_success = []
 arr_failure = []
 
-for i in succ.funded_date:
+for i in succ['funded date']:
   arr_success.append(i[8:11])
 
-for i in fail.funded_date:
+for i in fail['funded date']:
   arr_failure.append(i[8:11])
 
 arr_success = list(map(mapping_month, arr_success))
